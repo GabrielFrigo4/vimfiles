@@ -89,6 +89,9 @@ set paste
 " Visual selection automatically copied to the clipboard
 set go+=a
 
+" Set encoding to UTF-8
+set encoding=UTF-8
+
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -97,6 +100,7 @@ set go+=a
 call plug#begin()
 
   Plug 'preservim/nerdtree'
+  Plug 'ryanoasis/vim-devicons'
   Plug 'sheerun/vim-polyglot'
   Plug 'joshdick/onedark.vim'
   Plug 'mg979/vim-visual-multi'
