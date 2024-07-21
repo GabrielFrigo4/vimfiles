@@ -119,20 +119,13 @@ let mapleader="\\"
 
 " Switch Window
 nnoremap <tab> :wincmd w<CR>
-if has("win64") || has("win32") || has("win16")
-  nnoremap <M-]> :wincmd w<CR>
-else
-  "nnoremap <esc>] :wincmd w<CR>
-endif
+nnoremap <C-w> :wincmd w<CR>
+nnoremap <M-]> :wincmd w<CR>
 
 " NerdTree
-nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-\> :NERDTreeToggle<CR>
-if has("win64") || has("win32") || has("win16")
-  nnoremap <M-[> :NERDTreeToggle<CR>
-else
-  "nnoremap <esc>[ :NERDTreeToggle<CR>
-endif
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <M-[> :NERDTreeToggle<CR>
 
 " }}}
 
