@@ -99,6 +99,7 @@ call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
   Plug 'joshdick/onedark.vim'
+  Plug 'mg979/vim-visual-multi'
 
 call plug#end()
 
