@@ -119,12 +119,12 @@ let mapleader="\\"
 
 " Switch Window
 nnoremap <tab> :wincmd w<CR>
-nnoremap <C-w> :wincmd w<CR>
+nnoremap ; :wincmd w<CR>
 nnoremap <M-]> :wincmd w<CR>
 
 " NerdTree
 nnoremap <C-\> :NERDTreeToggle<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap , :NERDTreeToggle<CR>
 nnoremap <M-[> :NERDTreeToggle<CR>
 
 " }}}
