@@ -92,6 +92,9 @@ set go+=a
 " Set encoding to UTF-8
 set encoding=UTF-8
 
+" Set terminal GUI colors
+set termguicolors
+
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -99,11 +102,19 @@ set encoding=UTF-8
 
 call plug#begin()
 
-  Plug 'preservim/nerdtree'
+  " libs
   Plug 'ryanoasis/vim-devicons'
-  Plug 'sheerun/vim-polyglot'
-  Plug 'joshdick/onedark.vim'
+
+  " tools
+  Plug 'preservim/nerdtree'
   Plug 'mg979/vim-visual-multi'
+
+  " languages
+  Plug 'sheerun/vim-polyglot'
+
+  " themes
+  Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+  Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -148,7 +159,7 @@ syntax on
 set background=dark
 
 " Set default theme color
-colorscheme onedark
+colorscheme nightfly
 
 " }}}
 
