@@ -25,6 +25,9 @@ set cursorline
 " Highlight cursor line underneath the cursor vertically.
 set cursorcolumn
 
+" Set softtabstop to 0 spaces.
+set softtabstop=0
+
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -88,6 +91,9 @@ set paste
 
 " Visual selection automatically copied to the clipboard
 set go+=a
+
+" Enable autoindent.
+set autoindent
 
 " Set encoding to UTF-8
 set encoding=UTF-8
@@ -160,6 +166,12 @@ set background=dark
 
 " Set default theme color
 colorscheme nightfly
+
+" Set guicursor to style
+au VimEnter,VimResume * set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+  \,sm:block-blinkwait175-blinkoff150-blinkon175
+au VimLeave,VimSuspend * set guicursor=
 
 " }}}
 
