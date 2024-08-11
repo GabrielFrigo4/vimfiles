@@ -167,14 +167,18 @@ set background=dark
 " Set default theme color
 colorscheme nightfly
 
-" Set guicursor to style
-au VimEnter,VimResume * set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-  \,sm:block-blinkwait175-blinkoff150-blinkon175
+" Set guicursor style in gVim
+au VimEnter,VimResume * set guicursor=n-c:block,i-ci-ve:ver25,r-cr:hor10,o:hor50,v:hor10
+  \,a:blinkwait500-blinkoff500-blinkon500-Cursor/lCursor
 au VimLeave,VimSuspend * set guicursor=
+
+" Set terminal cursor style on Vim
+let &t_SI = "\<Esc>[5 q"
+let &t_SR = "\<Esc>[3 q"
+let &t_EI = "\<Esc>[1 q"
+
+" Set terminal cursor style to default
 if has('unix')
-  let &t_SI = "\e[5 q"
-  let &t_EI = "\e[1 q"
   au VimEnter,VimResume * silent !echo -ne "\e[1 q"
   au VimLeave,VimSuspend * silent !echo -ne "\e[1 q"
 endif
