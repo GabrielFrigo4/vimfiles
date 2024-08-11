@@ -172,6 +172,12 @@ au VimEnter,VimResume * set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor
   \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
   \,sm:block-blinkwait175-blinkoff150-blinkon175
 au VimLeave,VimSuspend * set guicursor=
+if has('unix')
+  let &t_SI = "\e[5 q"
+  let &t_EI = "\e[1 q"
+  au VimEnter,VimResume * silent !echo -ne "\e[1 q"
+  au VimLeave,VimSuspend * silent !echo -ne "\e[1 q"
+endif
 
 " }}}
 
