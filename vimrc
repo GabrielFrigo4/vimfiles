@@ -177,12 +177,6 @@ let &t_SI = "\<Esc>[5 q"
 let &t_SR = "\<Esc>[3 q"
 let &t_EI = "\<Esc>[1 q"
 
-" Set terminal cursor style to default
-if has('unix')
-  au VimEnter,VimResume * silent !echo -ne "\e[1 q"
-  au VimLeave,VimSuspend * silent !echo -ne "\e[1 q"
-endif
-
 " }}}
 
 
