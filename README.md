@@ -6,3 +6,8 @@ Gabriel Frigo's Vim Configuration
 set rtp+=~/vimfiles
 source ~/vimfiles/vimrc
 ```
+
+# [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+```bash
+apt install wl-clipboard
+```
