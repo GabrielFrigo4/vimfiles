@@ -117,6 +117,7 @@ call plug#begin()
 
   " languages
   Plug 'sheerun/vim-polyglot'
+  Plug 'bfrg/vim-cpp-modern'
 
   " themes
   Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
