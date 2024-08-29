@@ -11,3 +11,8 @@ source ~/vimfiles/vimrc
 ```bash
 apt install wl-clipboard
 ```
+
+# [xclip](https://github.com/astrand/xclip)
+```bash
+apt install xclip
+```
