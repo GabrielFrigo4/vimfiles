@@ -84,7 +84,7 @@ set mouse=a
 set mousemodel=popup
 
 " Use the clipboards of vim and win
-set clipboard+=unnamed
+set clipboard^=unnamed,unnamedplus
 
 " Paste from a windows or from vim
 set paste
