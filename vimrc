@@ -121,6 +121,7 @@ call plug#begin()
 
   " themes
   Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+  Plug 'tomasiser/vim-code-dark'
   Plug 'joshdick/onedark.vim'
 
 call plug#end()
@@ -166,7 +167,7 @@ syntax on
 set background=dark
 
 " Set default theme color
-colorscheme nightfly
+colorscheme codedark
 
 " Set guicursor style in gVim
 au VimEnter,VimResume * set guicursor=n-c:block,i-ci-ve:ver25,r-cr:hor10,o:hor50,v:hor10
