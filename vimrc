@@ -25,6 +25,9 @@ set cursorline
 " Highlight cursor line underneath the cursor vertically.
 set cursorcolumn
 
+" Make the backspace work normally
+set backspace=indent,eol,start
+
 " Set softtabstop to 0 spaces.
 set softtabstop=0
 
@@ -159,9 +162,6 @@ augroup filetype_vim
 augroup END
 
 " More Vimscripts code goes here.
-
-" Set syntax on
-syntax on
 
 " Set default background color
 set background=dark
