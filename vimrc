@@ -115,12 +115,13 @@ call plug#begin()
   Plug 'ryanoasis/vim-devicons'
 
   " tools
-  Plug 'preservim/nerdtree'
   Plug 'mg979/vim-visual-multi'
+  Plug 'preservim/nerdtree'
 
   " languages
   Plug 'sheerun/vim-polyglot'
   Plug 'bfrg/vim-cpp-modern'
+  Plug 'jceb/vim-orgmode'
 
   " themes
   Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
