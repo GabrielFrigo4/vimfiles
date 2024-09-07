@@ -26,7 +26,10 @@ set cursorline
 set cursorcolumn
 
 " Make the backspace work normally
-set backspace=indent,eol,start
+set backspace+=indent,eol,start
+
+" Make h,l,<left>,<right> work normally
+set whichwrap+=<,>,h,l,[,]
 
 " Set softtabstop to 0 spaces.
 set softtabstop=0
