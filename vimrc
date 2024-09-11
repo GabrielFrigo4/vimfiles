@@ -119,6 +119,7 @@ call plug#begin()
 
   " libs
   Plug 'ryanoasis/vim-devicons'
+  Plug 'tpope/vim-speeddating'
 
   " tools
   Plug 'mg979/vim-visual-multi'
