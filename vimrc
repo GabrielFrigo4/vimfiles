@@ -127,6 +127,8 @@ call plug#begin()
 
   " languages
   Plug 'sheerun/vim-polyglot'
+  Plug 'ARM9/arm-syntax-vim'
+  Plug 'kylelaker/riscv.vim'
   Plug 'jceb/vim-orgmode'
 
   " themes
