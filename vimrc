@@ -1,3 +1,7 @@
+" DEFAULT ---------------------------------------------------------------- {{{
+
+" Default code goes here.
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -110,6 +114,8 @@ set encoding=UTF-8
 " Set terminal GUI colors
 set termguicolors
 
+" }}}
+
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -157,6 +163,9 @@ nnoremap <M-]> :wincmd w<CR>
 nnoremap <C-\> :NERDTreeToggle<CR>
 nnoremap , :NERDTreeToggle<CR>
 nnoremap <M-[> :NERDTreeToggle<CR>
+
+" Backspace in normal mode
+nnoremap <expr> <Backspace> col('.') == 1 ? 'kgJ' : 'X'
 
 " }}}
 
