@@ -38,8 +38,8 @@ set backspace+=indent,eol,start
 " Make h,l,<left>,<right> work normally
 set whichwrap+=<,>,h,l,[,]
 
-" Set softtabstop to 0 spaces.
-set softtabstop=0
+" Set softtabstop to 4 spaces.
+set softtabstop=4
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -49,6 +49,9 @@ set tabstop=4
 
 " Use space characters instead of tabs.
 " set expandtab
+
+" Use space tabs instead of characters.
+set noexpandtab
 
 " Do not save backup files.
 set nobackup
@@ -130,6 +133,7 @@ call plug#begin()
   " tools
   Plug 'mg979/vim-visual-multi'
   Plug 'preservim/nerdtree'
+  Plug 'mattn/calendar-vim'
 
   " languages
   Plug 'sheerun/vim-polyglot'
@@ -141,6 +145,16 @@ call plug#begin()
   Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
   Plug 'tomasiser/vim-code-dark'
   Plug 'joshdick/onedark.vim'
+
+  " vim-scripts
+  Plug 'vim-scripts/utl.vim'
+  Plug 'vim-scripts/repeat.vim'
+  Plug 'vim-scripts/taglist.vim'
+  Plug 'vim-scripts/Tagbar'
+  Plug 'vim-scripts/speeddating.vim'
+  Plug 'vim-scripts/NrrwRgn'
+  Plug 'vim-scripts/pathogen.vim'
+  Plug 'vim-scripts/SyntaxRange'
 
 call plug#end()
 
@@ -210,8 +224,14 @@ let g:cpp_simple_highlight = 1
 " }}}
 
 
-" STATUS LINE ------------------------------------------------------------ {{{
+" LANGUAGE SETUP ------------------------------------------------------------ {{{
 
-" Status bar code goes here.
+" Tab Fixed
+au BufNewFile,BufRead *.py,*.pyw,*.org
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
 
 " }}}
