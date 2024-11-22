@@ -1,7 +1,5 @@
 " DEFAULT ---------------------------------------------------------------- {{{
 
-" Default code goes here.
-
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -122,8 +120,6 @@ set termguicolors
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
-" Plugin code goes here.
-
 call plug#begin()
 
   " libs
@@ -162,8 +158,6 @@ call plug#end()
 
 
 " MAPPINGS --------------------------------------------------------------- {{{
-
-" Mappings code goes here.
 
 " Set the backslash as the leader key.
 let mapleader="\\"
