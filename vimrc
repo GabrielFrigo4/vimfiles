@@ -45,9 +45,6 @@ set shiftwidth=4
 " Set tab width to 4 columns.
 set tabstop=4
 
-" Use space characters instead of tabs.
-" set expandtab
-
 " Use space tabs instead of characters.
 set noexpandtab
 
@@ -138,9 +135,7 @@ call plug#begin()
   Plug 'jceb/vim-orgmode'
 
   " themes
-  Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
   Plug 'tomasiser/vim-code-dark'
-  Plug 'joshdick/onedark.vim'
 
   " vim-scripts
   Plug 'vim-scripts/utl.vim'
