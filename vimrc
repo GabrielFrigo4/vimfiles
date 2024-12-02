@@ -216,7 +216,7 @@ let g:cpp_simple_highlight = 1
 " LANGUAGE SETUP ------------------------------------------------------------ {{{
 
 " Tab Fixed
-au BufNewFile,BufRead *.py,*.pyw,*.org
+au BufNewFile,BufRead *.rs,*.py,*.pyw,*.org
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
