@@ -178,14 +178,11 @@ nnoremap <expr> <Backspace> col('.') == 1 ? 'kgJ' : 'X'
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
 
-" This will enable code folding.
-" Use the marker method of folding.
+" Enable code folding.
 augroup filetype_vim
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
-
-" More Vimscripts code goes here.
 
 " Set default background color
 set background=dark
