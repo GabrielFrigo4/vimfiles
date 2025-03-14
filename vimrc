@@ -18,6 +18,12 @@ filetype plugin indent on
 " Turn syntax highlighting on.
 syntax on
 
+" Set buffer to not readonly
+set noreadonly
+
+" Set buffer to modifiable
+set modifiable
+
 " Disable the creation of swap files
 set noswapfile
 
@@ -201,7 +207,7 @@ let &t_SR = "\<Esc>[3 q"
 let &t_EI = "\<Esc>[1 q"
 
 " MANPAGER
-autocmd VimEnter * MANPAGER
+runtime! ftplugin/man.vim
 
 " }}}
 
