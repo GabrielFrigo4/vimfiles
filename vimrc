@@ -141,6 +141,7 @@ call plug#begin()
   Plug 'sheerun/vim-polyglot'
   Plug 'ARM9/arm-syntax-vim'
   Plug 'kylelaker/riscv.vim'
+  Plug 'fedorenchik/fasm.vim'
   Plug 'jceb/vim-orgmode'
 
   " themes
@@ -215,7 +216,79 @@ runtime! ftplugin/man.vim
 " LANGUAGE SETUP ------------------------------------------------------------ {{{
 
 " Tab Fixed
-au BufNewFile,BufRead *.org,*.norg,*.py,*.pyw,*.lua,*.wlua,*.rs,*.zig,*.s,*.i,*.S,*.I,*.asm,*.inc
+au BufNewFile,BufRead *.org,*.norg,*.py,*.pyw,*.lua,*.wlua,*.rs,*.zig
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup RISC-V
+au BufNewFile,BufRead *.riscv,*.rinc,*.RISCV,*.RINC
+    \ set filetype=riscv |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup ARM
+au BufNewFile,BufRead *.arm,*.ainc,*.ARM,*.AINC
+    \ set filetype=arm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup X86 / X64
+au BufNewFile,BufRead *.x86,*.x64,*.xinc,*.X86,*.X64,*.Xinc
+    \ set filetype=nasm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup NASM
+au BufNewFile,BufRead *.nasm,*.ninc
+    \ set filetype=nasm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup FASM
+au BufNewFile,BufRead *.fasm,*.finc
+    \ set filetype=fasm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup MASM
+au BufNewFile,BufRead *.masm,*.minc
+    \ set filetype=masm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup GAS
+au BufNewFile,BufRead *.gas,*.ginc
+    \ set filetype=asm |
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set noexpandtab |
+    \ set autoindent
+
+" Setup ASM
+au BufNewFile,BufRead *.s,*.i,*.S,*.I,*.asm,*.inc
+    \ set filetype=nasm |
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
