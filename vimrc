@@ -139,10 +139,12 @@ call plug#begin()
 
   " languages
   Plug 'sheerun/vim-polyglot'
-  Plug 'ARM9/arm-syntax-vim'
-  Plug 'kylelaker/riscv.vim'
-  Plug 'fedorenchik/fasm.vim'
   Plug 'jceb/vim-orgmode'
+
+  " assembly
+  Plug 'GabrielFrigo4/fasm.vim'
+  Plug 'kylelaker/riscv.vim'
+  Plug 'ARM9/arm-syntax-vim'
 
   " themes
   Plug 'tomasiser/vim-code-dark'
