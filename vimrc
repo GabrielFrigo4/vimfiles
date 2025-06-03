@@ -128,36 +128,38 @@ set termguicolors
 
 call plug#begin()
 
-  " libs
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'tpope/vim-speeddating'
+    " libs
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tpope/vim-speeddating'
+    Plug 'junegunn/fzf.vim'
 
-  " tools
-  Plug 'mg979/vim-visual-multi'
-  Plug 'preservim/nerdtree'
-  Plug 'mattn/calendar-vim'
+    " tools
+    Plug 'mg979/vim-visual-multi'
+    Plug 'girishji/scope.vim'
+    Plug 'preservim/nerdtree'
+    Plug 'mattn/calendar-vim'
 
-  " languages
-  Plug 'sheerun/vim-polyglot'
-  Plug 'jceb/vim-orgmode'
+    " languages
+    Plug 'sheerun/vim-polyglot'
+    Plug 'jceb/vim-orgmode'
 
-  " assembly
-  Plug 'GabrielFrigo4/fasm.vim'
-  Plug 'kylelaker/riscv.vim'
-  Plug 'ARM9/arm-syntax-vim'
+    " assembly
+    Plug 'GabrielFrigo4/fasm.vim'
+    Plug 'kylelaker/riscv.vim'
+    Plug 'ARM9/arm-syntax-vim'
 
-  " themes
-  Plug 'tomasiser/vim-code-dark'
+    " themes
+    Plug 'tomasiser/vim-code-dark'
 
-  " vim-scripts
-  Plug 'vim-scripts/utl.vim'
-  Plug 'vim-scripts/repeat.vim'
-  Plug 'vim-scripts/taglist.vim'
-  Plug 'vim-scripts/Tagbar'
-  Plug 'vim-scripts/speeddating.vim'
-  Plug 'vim-scripts/NrrwRgn'
-  Plug 'vim-scripts/pathogen.vim'
-  Plug 'vim-scripts/SyntaxRange'
+    " vim-scripts
+    Plug 'vim-scripts/utl.vim'
+    Plug 'vim-scripts/repeat.vim'
+    Plug 'vim-scripts/taglist.vim'
+    Plug 'vim-scripts/Tagbar'
+    Plug 'vim-scripts/speeddating.vim'
+    Plug 'vim-scripts/NrrwRgn'
+    Plug 'vim-scripts/pathogen.vim'
+    Plug 'vim-scripts/SyntaxRange'
 
 call plug#end()
 
@@ -178,6 +180,12 @@ nnoremap <M-]> :wincmd w<CR>
 nnoremap <C-\> :NERDTreeToggle<CR>
 nnoremap , :NERDTreeToggle<CR>
 nnoremap <M-[> :NERDTreeToggle<CR>
+
+" Scope
+nnoremap <C-s>f <ESC>:Scope File<CR>
+nnoremap <C-s>g <ESC>:Scope Grep<CR>
+nnoremap <C-s>b <ESC>:Scope Buffer<CR>
+nnoremap <C-s>t <ESC>:Scope Tag<CR>
 
 " Backspace in normal mode
 nnoremap <expr> <Backspace> col('.') == 1 ? 'kgJ' : 'X'
@@ -201,7 +209,7 @@ colorscheme codedark
 
 " Set guicursor style in gVim
 au VimEnter,VimResume * set guicursor=n-c:block,i-ci-ve:ver25,r-cr:hor10,o:hor50,v:hor10
-  \,a:blinkwait500-blinkoff500-blinkon500-Cursor/lCursor
+    \,a:blinkwait500-blinkoff500-blinkon500-Cursor/lCursor
 au VimLeave,VimSuspend * set guicursor=
 
 " Set terminal cursor style on Vim
