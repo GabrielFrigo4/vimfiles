@@ -142,6 +142,7 @@ call plug#begin()
     " languages
     Plug 'sheerun/vim-polyglot'
     Plug 'jceb/vim-orgmode'
+    Plug 'thindil/vim-ada'
 
     " assembly
     Plug 'GabrielFrigo4/fasm.vim'
