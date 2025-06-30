@@ -126,6 +126,9 @@ set termguicolors
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
+" Disable Vim-Polyglot [ADA]
+let g:polyglot_disabled = ['ada']
+
 call plug#begin()
 
     " libs
