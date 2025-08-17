@@ -3,34 +3,25 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
-
-" Load an indent file for the detected file type.
-filetype indent on
-
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
-
-" Enable plugins and load plugin for indent the detected file type.
+" Enable type file and plugin detection and indent.
 filetype plugin indent on
 
 " Turn syntax highlighting on.
 syntax on
 
-" Set buffer to not readonly
+" Set buffer to not readonly.
 set noreadonly
 
-" Set buffer to modifiable
+" Set buffer to modifiable.
 set modifiable
 
-" Disable the creation of swap files
+" Disable the creation of swap files.
 set noswapfile
 
 " Add numbers to each line on the left-hand side.
 set number
 
-" Add cursor relative number
+" Add cursor relative number.
 set relativenumber
 
 " Highlight cursor line underneath the cursor horizontally.
@@ -39,10 +30,10 @@ set cursorline
 " Highlight cursor line underneath the cursor vertically.
 set cursorcolumn
 
-" Make the backspace work normally
+" Make the backspace work normally.
 set backspace+=indent,eol,start
 
-" Make h,l,<left>,<right> work normally
+" Make h,l,<left>,<right> work normally.
 set whichwrap+=<,>,h,l,[,]
 
 " Set softtabstop to 4 spaces.
@@ -97,28 +88,28 @@ set wildmenu
 " Make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
 
-" Enable mouse edit
+" Enable mouse edit.
 set mouse=a
 
-" Enable mouse popup
+" Enable mouse popup.
 set mousemodel=popup
 
-" Use the clipboards of vim and win
+" Use the clipboards of vim and win.
 set clipboard^=unnamed,unnamedplus
 
-" Paste from a windows or from vim
+" Paste from a windows or from vim.
 set paste
 
-" Visual selection automatically copied to the clipboard
+" Visual selection automatically copied to the clipboard.
 set go+=a
 
 " Enable autoindent.
 set autoindent
 
-" Set encoding to UTF-8
+" Set encoding to UTF-8.
 set encoding=UTF-8
 
-" Set terminal GUI colors
+" Set terminal GUI colors.
 set termguicolors
 
 " }}}
@@ -191,7 +182,7 @@ nnoremap <C-s>g <ESC>:Scope Grep<CR>
 nnoremap <C-s>b <ESC>:Scope Buffer<CR>
 nnoremap <C-s>t <ESC>:Scope Tag<CR>
 
-" Backspace in normal mode
+" Backspace in normal mode.
 nnoremap <expr> <Backspace> col('.') == 1 ? 'kgJ' : 'X'
 
 " }}}
@@ -205,18 +196,18 @@ augroup filetype_vim
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
-" Set default background color
+" Set default background color.
 set background=dark
 
-" Set default theme color
+" Set default theme color.
 colorscheme codedark
 
-" Set guicursor style in gVim
+" Set guicursor style in gVim.
 au VimEnter,VimResume * set guicursor=n-c:block,i-ci-ve:ver25,r-cr:hor10,o:hor50,v:hor10
     \,a:blinkwait500-blinkoff500-blinkon500-Cursor/lCursor
 au VimLeave,VimSuspend * set guicursor=
 
-" Set terminal cursor style on Vim
+" Set terminal cursor style on Vim.
 let &t_SI = "\<Esc>[5 q"
 let &t_SR = "\<Esc>[3 q"
 let &t_EI = "\<Esc>[1 q"
