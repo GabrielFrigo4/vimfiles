@@ -17,6 +17,11 @@ yay -S wl-clipboard
 yay -S xclip
 ```
 
+# [xsel](https://github.com/kfish/xsel)
+```zsh
+yay -S xsel
+```
+
 # [win32yank](https://github.com/equalsraf/win32yank)
 ```pwsh
 winget install equalsraf.win32yank
