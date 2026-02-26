@@ -1,5 +1,5 @@
-# vimfiles
- Gabriel Frigo's Vim Configuration
+# Gabriel Frigo's Vim Configuration
+ This repository is the configuration of the Vim code editor that Gabriel Frigo uses
 
 ## .vimrc
  ```vim
