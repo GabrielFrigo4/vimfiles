@@ -30,6 +30,7 @@ set nobackup
 set noswapfile
 set nowrap
 set backspace=indent,eol,start
+set whichwrap+=<,>,h,l,[,]
 set mouse=a
 set clipboard^=unnamed,unnamedplus
 
